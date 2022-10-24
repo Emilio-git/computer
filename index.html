@@ -7,25 +7,93 @@
    <link rel="stylesheet" href="./src/css/style.css">
    <title>Курс по компьютерной сборке</title>
 </head>
+
 <body>
    <div class="wrapper">
       <header class="header">
-         <div class="header__container container">
-
+         <div class="header__logo">
+            <img src="./assets/icons/logo.svg" alt="Logo" class="header__logo-img">
          </div>
+            <nav class="header__menu menu">
+               <ul class="menu__list">
+                  <li class="menu__item">
+                     <a class="menu__link" href="#">Главная</a>
+                  </li>
+                  <li class="menu__item">
+                     <a class="menu__link" href="#">Курсы</a>
+                  </li>
+                  <li class="menu__item">
+                     <a class="menu__link" href="#">Расписание</a>
+                  </li>
+                  <li class="menu__item">
+                     <a class="menu__link" href="#">Преподаватели</a>
+                  </li>
+                  <li class="menu__item">
+                     <a class="menu__link" href="#">Рассылка</a>
+                  </li>
+                  <li class="menu__item">
+                     <a class="menu__link" href="#">Контакты</a>
+                  </li>
+               </ul>
+            </nav>
+            <a href="#" class="header__button">Зайти в кабинет</a>
+            <div class="header__burger burger hide">
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
       </header>
       <main class="main">
-         <div class="main__container container">
-            DDDD
-         </div>
+         <section class="main-section">
+            <div class="main-section__container container">
+               <h1 class="main-section__title">
+                  Первый курс <br>по компьютерной сборке
+               </h1>
+               <div class="main-section__timer timer">
+                  <div class="timer__item">
+                     <span id="days">18</span>
+                     <p>Дней</p>
+                  </div>
+                  <div class="timer__item">
+                     <span id="hours">18</span>
+                     <p>Часов</p>
+                  </div>
+                  <div class="timer__item">
+                     <span id="minutes">18</span>
+                     <p>Минут</p>
+                  </div>
+                  <div class="timer__item">
+                     <span id="seconds">18</span>
+                     <p>Секунд</p>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section class="info">
+            <div class="info__container container">
+               <a href="#" class="info__button">Заказать курс</a>
+               <div class="info__statictics statictics">
+                  <div class="statictics__students">
+                     <p class="statictics__students-title">Учеников всего:</p>
+                     <p class="statictics__students-quantity">200</p>
+                  </div>
+                  <div class="statictics__success">
+                     <p class="statictics__success-title">Успешно закончили курс:</p>
+                     <p class="statictics__success-quantity">190</p>
+                  </div>
+               </div>
+               <div class="info__wage">
+                  
+               </div>
+            </div>
+         </section>
       </main>
       <footer class="footer">
          <div class="footer__container container">
-            AAA
          </div>
       </footer>
    </div>
+
    <script src="./src/js/script.js"></script>
-   
 </body>
 </html>
