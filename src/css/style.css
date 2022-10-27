@@ -107,11 +107,14 @@ body {
 .container {
   max-width: 1336px;
   padding: 0 20px;
+  margin: 0 auto;
 }
 
 .header {
   z-index: 5;
   padding: 40px 80px;
+  position: absolute;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -120,6 +123,9 @@ body {
   width: 40px;
   height: 40px;
   flex: 0 0 40px;
+}
+.header__logo:hover {
+  animation: rotateLogo 1s ease;
 }
 .header__logo-img {
   width: 100%;
@@ -140,6 +146,14 @@ body {
   opacity: 0.8;
 }
 
+@keyframes rotateLogo {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 .menu__list {
   display: flex;
 }
@@ -191,7 +205,8 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 159px 0 218px;
+  padding: 270px 0 218px;
+  margin-bottom: -120px;
 }
 .main-section__title {
   font-weight: 700;
@@ -223,4 +238,196 @@ body {
 .timer__item p {
   opacity: 0.4;
   font-size: 16px;
+}
+
+.info {
+  padding: 35px 0 28px;
+  background: #000;
+}
+.info__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info__button {
+  padding: 0 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 44px;
+  display: inline-block;
+  border-radius: 50px;
+  transition: 0.3s all;
+  flex-shrink: 0;
+  background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+}
+.info__button:hover {
+  opacity: 0.8;
+}
+.statictics {
+  flex: 0 1 250px;
+  display: flex;
+  flex-direction: column;
+}
+.statictics__students {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.statictics__students-title {
+  opacity: 0.4;
+  line-height: 150%;
+}
+.statictics__students-quantity {
+  font-weight: 700;
+  line-height: 150%;
+}
+.statictics__success {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.statictics__success-title {
+  opacity: 0.4;
+  line-height: 150%;
+}
+.statictics__success-quantity {
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.wage {
+  flex: 0 0 715px;
+}
+.wage__statistics {
+  display: flex;
+  margin-bottom: 7px;
+}
+.wage__title {
+  margin-right: 30px;
+  line-height: 150%;
+  opacity: 0.4;
+}
+.wage__amount {
+  font-weight: 700;
+  line-height: 150%;
+}
+.wage__scale {
+  margin-bottom: 5px;
+  position: relative;
+  height: 6px;
+  width: 100%;
+  background: #fff;
+}
+.wage__scale-inner {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+}
+.wage__numbers {
+  line-height: 150%;
+  opacity: 0.4;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about {
+  padding: 200px 0;
+}
+.about__container {
+  display: flex;
+  justify-content: space-between;
+}
+.about__pc {
+  flex: 0 0 526px;
+  height: 500px;
+  margin-right: 134px;
+}
+.about__square {
+  padding: 30px;
+  background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.about__square-inner {
+  background: #000;
+  min-width: 100%;
+  z-index: 2;
+  min-height: 100%;
+}
+.about__img {
+  position: absolute;
+  left: 40px;
+  top: 96px;
+}
+.about__img img {
+  width: 100%;
+}
+.about__descr {
+  padding: 69px 0;
+}
+.about__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 140%;
+  margin-bottom: 45px;
+}
+.about__text {
+  line-height: 160%;
+  padding-left: 5px;
+}
+
+.start {
+  padding-top: 10px;
+}
+.start__title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 140%;
+  margin-bottom: 49px;
+}
+.start__subtitle {
+  line-height: 160%;
+  opacity: 0.5;
+  margin-bottom: 80px;
+}
+.start__steps {
+  display: flex;
+}
+.start__step {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 25%;
+}
+
+.step__percent {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 140%;
+  margin-bottom: 20px;
+}
+.step__rectangle-wrapper {
+  flex: 0 1 80px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.step__rectangle {
+  height: 80px;
+  width: 100%;
+  background: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 90.23%);
+}
+.step__text {
+  font-size: 14px;
+  line-height: 160%;
+  opacity: 0.5;
+  flex: 1 1 auto;
+  padding-right: 18px;
+}
+
+.reflected-rectangle {
+  transform: scaleX(-1);
 }
