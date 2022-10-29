@@ -1,6 +1,16 @@
 'use strict';
 
 window.addEventListener('DOMContentLoaded', () => {
+   // Burger
+   const burger = document.querySelector('.burger'),
+         menu = document.querySelector('.menu');
+
+   burger.addEventListener('click', () => {
+      burger.classList.toggle('active-burger');
+      menu.classList.toggle('active-menu');
+      document.body.classList.toggle('scroll-off');
+   });
+   // ----------------------------------------
 
    // Data and reflection result on web-page
    const data = {
